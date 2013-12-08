@@ -5,10 +5,7 @@ var express = require('express'),
     untappd = new untappdClient(false),
     expressLayouts = require('express-ejs-layouts'),
     untappdClientId = process.env.UNTAPPD_CLIENT_ID,
-    untappdClientSecret = process.env.UNTAPPD_CLIENT_SECRET,
-    foursquareClientId = process.env.FOURSQUARE_CLIENT_ID,
-    foursquareClientSecret = process.env.FOURSQUARE_CLIENT_SECRET,
-    songkickApiKey = process.env.SONGKICK_API_KEY;
+    untappdClientSecret = process.env.UNTAPPD_CLIENT_SECRET;
 
 untappd.setClientId(untappdClientId);
 untappd.setClientSecret(untappdClientSecret);
@@ -29,11 +26,7 @@ app.use(app.router)
 // make a custom html template
 
 app.get('/', function(req, res){
-  res.render('index', {
-    foursquareClientId: foursquareClientId,
-    foursquareClientSecret: foursquareClientSecret,
-    songkickApiKey: songkickApiKey
-  });
+  res.render('index');
 });
 
 app.get('/shame/:venue/:beers', function(req, res){
@@ -45,10 +38,7 @@ app.get('/shame/:venue/:beers', function(req, res){
   }
   res.render('shame', {
     venue: req.params.venue,
-    beers: beers,
-    foursquareClientId: foursquareClientId,
-    foursquareClientSecret: foursquareClientSecret,
-    songkickApiKey: songkickApiKey
+    beers: beers
   });
 });
 
