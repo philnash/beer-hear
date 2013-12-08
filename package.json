@@ -1,0 +1,12 @@
+{
+  "name": "beer-hear",
+  "description": "better beer where you hear",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "ejs": "> 0.0.1",
+    "node-untappd": ">= 0.1.0",
+    "express-ejs-layouts": ">0.0.1"
+  }
+}

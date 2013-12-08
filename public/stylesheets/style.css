@@ -1,0 +1,114 @@
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body{
+  background: #212121;
+}
+body, input{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+strong{
+  font-weight: bold;
+}
+
+header{
+  background: #212121;
+  border-bottom: 10px solid #C00;
+}
+header h1{
+  max-width:640px;
+  padding:20px 20px 0 20px;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f8f8f8;
+  text-shadow: 2px 0 0 #C00;
+}
+header h1 a{
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+main{
+  background:#e8e8e8;
+  min-height: 300px;
+}
+main .wrapper{
+  max-width: 640px;
+  padding: 20px;
+  margin: 0 auto;
+}
+main a{
+  color: #C00;
+}
+main p, main h2{
+  margin-bottom: 1em;
+}
+main .intro{
+  max-width: 640px;
+  margin:0 auto 2em;
+}
+
+main form{
+  max-width: 320px;
+  margin: 0 auto 2em;
+}
+main form label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+main form input{
+  font-size: 16px;
+  border: 2px solid #212121;
+  border-radius: 6px;
+  width: 100%;
+  padding:5px;
+  margin-bottom: 0.5em;
+}
+main form button,
+main .button{
+  font-size: 16px;
+  background: #212121;
+  border: 2px solid #C00;
+  border-radius: 6px;
+  color: #f8f8f8;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+main .button{
+  display: inline-block;
+  width: auto;
+}
+
+main .events > li{
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #212121;
+}
+main .events > li:last-child{
+  border:none;
+}
+main .events > li h2{
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+footer{
+  padding: 20px;
+  background: #212121;
+  border-top: 10px solid #C00;
+}
+footer p{
+  max-width: 640px;
+  margin:0 auto;
+  color:#f8f8f8;
+}
+footer p a{
+  color:#C00;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>BeerHear</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+<meta name="viewport"
+  content="width=device-width user-scalable=0 maximum-scale=1.0">
+
+<header>
+  <h1><a href="/">BeerHear</a></h1>
+</header>
+
+<main>
+  <div class="wrapper">
+    <%- body %>
+  </div>
+</main>
+
+<footer>
+  <p>a <a href="http://twitter.com/philnash">philnash</a> <a href="http://london.musichackday.org/2013/index.php?page=Main+page">musichackday</a> hack</p>
+</footer>
+
+<script>
+  window.env = {
+    foursquareClientId: '<%= foursquareClientId %>',
+    foursquareClientSecret: '<%= foursquareClientSecret %>',
+    songkickApiKey: '<%= songkickApiKey %>'
+  }
+</script>
+<script src="/javascripts/lib/jquery.min.js"></script>
+<script src="/javascripts/lib/spin.min.js"></script>
+<script src="/javascripts/app.js"></script>
